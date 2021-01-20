@@ -16,7 +16,7 @@ client.on('message', message => {
 
     if (message.content === 'ping') {
 
-       message.reply('suscríbete a pika hijo de puta');
+       message.reply('@Server Booster');
 
        }
 
