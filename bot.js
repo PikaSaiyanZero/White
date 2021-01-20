@@ -16,7 +16,7 @@ client.on('message', message => {
 
     if (message.content === 'ping') {
 
-       message.reply('pong');
+       message.reply('la chucha de tu madre el siguiente que ponga ping lo reviento');
 
        }
 
