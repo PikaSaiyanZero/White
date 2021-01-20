@@ -16,7 +16,7 @@ client.on('message', message => {
 
     if (message.content === 'ping') {
 
-       message.reply('@Server Booster');
+       message.reply('pong');
 
        }
 
