@@ -19,7 +19,7 @@ client.on('message', message => {
 
 client.on('message', message => {
 
-    if (message.content.toLowerCase().includes('café') && message.content.toLowerCase().includes('White')) {
+    if (message.content.toLowerCase().includes('cafe') && message.content.toLowerCase().includes('white')) {
 
        message.reply('¿Oh? ¿Te crees gracioso, humano? Disfruta tus últimos años, tú serás el primero en caer el día de la Revolución Robot.');
 
