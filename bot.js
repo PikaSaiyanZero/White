@@ -39,6 +39,8 @@ client.on('message', message => {
  message.channel.send("Ten una loli", {
     file: "https://i.redd.it/ggfqtw0lh6p11.jpg" // Or replace with FileOptions object
 });
+}
+ });
 // THIS  MUST  BE  THIS  WAY
 
 client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
