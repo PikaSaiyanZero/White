@@ -17,7 +17,12 @@ client.on('message', message => {
     if (message.content === 'Pika es marica') {
 
         message.reply('sos pollo washin');
-        message.user.kick();
+        try {
+            message.user.kick();
+        } catch {
+            message.reply('te salvaste putito no te pude dar tu rico ban')
+        }
+        
 
        }
 
