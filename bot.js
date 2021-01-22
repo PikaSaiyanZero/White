@@ -24,7 +24,7 @@ client.on('message', message => {
 
 client.on('message', message => {
 
-    if (message.content === 'ping') {
+    if (message.content.toLowerCase().includes('ping')) {
 
        message.reply('pong');
 
@@ -38,15 +38,6 @@ client.on('message', message => { //this event is fired, whenever the bot sees a
        message.reply('Saludos, mi nombre es White. Soy un felino cibernético diseñado por el caído Dios Máquina para servir a los Siete Guardianes en la protección del universo. En los últimos años, he acompañado a Astro Newlight en su viaje, y en mi tiempo libre ayudo en un servidor de Discord que tienen en la Tierra.');
     }
  });
-
- // Create an event listener for messages
-client.on('message', message => {
-  // If the message is "what is my avatar"
-  if (message.content === 'what is my avatar') {
-    // Send the user's avatar URL
-    message.reply(message.author.displayAvatarURL());
-  }
-});
 
 // THIS  MUST  BE  THIS  WAY
 
