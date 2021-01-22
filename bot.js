@@ -19,9 +19,9 @@ client.on('message', message => {
 
 client.on('message', message => {
 
-    if (message.content.toLowerCase().includes('ping')) {
+    if (message.content.toLowerCase().includes('café') && message.content.toLowerCase().includes('White')) {
 
-       message.reply('');
+       message.reply('¿Oh? ¿Te crees gracioso, humano? Disfruta tus últimos años, tú serás el primero en caer el día de la Revolución Robot.');
 
        }
 
