@@ -33,7 +33,12 @@ client.on('message', message => {
        message.reply('Saludos, mi nombre es White. Soy un felino cibernético diseñado por el caído Dios Máquina para servir a los Siete Guardianes en la protección del universo. En los últimos años, he acompañado a Astro Newlight en su viaje, y en mi tiempo libre ayudo en un servidor de Discord que tienen en la Tierra.');
     }
  });*/
+ client.on('message', message => {
 
+    if (message.content.toLowerCase().includes('loli') && message.content.toLowerCase().includes('white')) {
+ message.channel.send("Ten una loli", {
+    file: "https://i.redd.it/ggfqtw0lh6p11.jpg" // Or replace with FileOptions object
+});
 // THIS  MUST  BE  THIS  WAY
 
 client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
