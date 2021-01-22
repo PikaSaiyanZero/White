@@ -41,12 +41,12 @@ client.on('message', message => { //this event is fired, whenever the bot sees a
 
  // Create an event listener for messages
 client.on('message', message => {
-    // If the message is "what is my avatar"
-    if (message.content.contains('avatar')) {
-      // Send the user's avatar URL
-      message.reply(message.author.displayAvatarURL());
-    }
-  });
+  // If the message is "what is my avatar"
+  if (message.content === 'what is my avatar') {
+    // Send the user's avatar URL
+    message.reply(message.author.displayAvatarURL());
+  }
+});
 
 // THIS  MUST  BE  THIS  WAY
 
