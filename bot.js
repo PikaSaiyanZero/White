@@ -19,7 +19,7 @@ client.on('message', message => {
     if (message.content.startsWith("White, borra ")) {
        try {
          var messsagesToDelete = message.content.slice(13, message.content.length);
-         var numberOfMessages = parseInt(messsagesToDelete);
+         var numberOfMessages = parseInt(messsagesToDelete, 10);
          if (numberOfMessages < 50) {
             message.channel.bulkDelete(numberOfMessages);
             message.channel.send("Los mensajes fueron borrados exitosamente.")
