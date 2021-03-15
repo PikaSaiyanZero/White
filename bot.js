@@ -20,11 +20,13 @@ client.on('message', message => {
        try {
          var messsagesToDelete = message.content.slice(13, message.content.length);
          var numberOfMessages = parseInt(messsagesToDelete, 10);
-         if (numberOfMessages < 50) {
+         if (numberOfMessages < 50 && numberOfMessages >= 1) {
             message.channel.bulkDelete(numberOfMessages);
-            message.reply("Los mensajes fueron borrados exitosamente.");
+            message.reply("los mensajes fueron borrados exitosamente.");
          }
-         
+         else {
+             message.reply("watefok amigo estas re loco llama a la sorra del bors pa que te aiude");
+         }
        } catch (error) {
           message.channel.send("Hubo un error. Eres gilipollas. Y este fue el error: ${error}");
        }
