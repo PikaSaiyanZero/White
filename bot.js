@@ -9,7 +9,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content.startsWith("White, say ")) {
+    if (message.content.startsWith("White, di ")) {
        message.delete(0); //Supposed to delete message
        message.channel.send(message.content.slice(11, message.content.length));
     }
