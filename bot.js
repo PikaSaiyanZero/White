@@ -22,7 +22,7 @@ client.on('message', message => {
          var numberOfMessages = parseInt(messsagesToDelete, 10);
          if (numberOfMessages < 50) {
             message.channel.bulkDelete(numberOfMessages);
-            message.channel.send("Los mensajes fueron borrados exitosamente.");
+            message.channel.send("${numberOfMessages} mensajes fueron borrados exitosamente.");
          }
          
        } catch (error) {
