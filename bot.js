@@ -15,6 +15,23 @@ client.on('message', message => {
     }
  });
 
+ client.on('message', message => {
+    if (message.content.startsWith("White, borra ")) {
+       try {
+         var messsagesToDelete = message.content.slice(13, message.content.length);
+         var numberOfMessages = parseInt(messsagesToDelete);
+         if (numberOfMessages < 50) {
+            message.channel.bulkDelete(numberOfMessages);
+            message.channel.send("Los mensajes fueron borrados exitosamente.")
+         }
+         
+       } catch (error) {
+          message.channel.send("Hubo un error. Eres gilipollas.")
+       }
+       
+    }
+ })
+
 client.on('message', message => {
 
     if (message.content.toLowerCase().includes('cafe') && message.content.toLowerCase().includes('white')) {
