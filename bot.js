@@ -11,7 +11,7 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.content.startsWith("White, di ")) {
        message.delete(0); //Supposed to delete message
-       message.channel.send(message.content.slice(11, message.content.length));
+       message.channel.send(message.content.slice(10, message.content.length));
     }
  });
 
@@ -22,12 +22,14 @@ client.on('message', message => {
          var numberOfMessages = parseInt(messsagesToDelete, 10);
          if (numberOfMessages < 50) {
             message.channel.bulkDelete(numberOfMessages);
-            message.channel.send("Los mensajes fueron borrados exitosamente.")
+            message.channel.send("Los mensajes fueron borrados exitosamente.");
          }
          
        } catch (error) {
-          message.channel.send("Hubo un error. Eres gilipollas.")
+          message.channel.send("Hubo un error. Eres gilipollas. Y este fue el error: ${error}");
        }
+
+       
        
     }
  })
