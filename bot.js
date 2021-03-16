@@ -25,7 +25,7 @@ client.on('message', message => {
             message.reply("los mensajes fueron borrados exitosamente.");
          }
          else {
-             message.reply("watefok amigo estas re loco llama a la sorra del bors pa que te aiude");
+             message.reply("seas quien seas, ¿puedes decirle a Haise y los putos que yo digo lo que me de la gana? Gracias.");
          }
        } catch (error) {
           message.channel.send("Hubo un error. Eres gilipollas. Y este fue el error: ${error}");
