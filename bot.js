@@ -25,7 +25,7 @@ client.on('message', message => {
             message.reply("los mensajes fueron borrados exitosamente.");
          }
          else {
-             message.reply("seas quien seas, ¿puedes decirle a Haise y los putos que yo digo lo que me de la gana? Gracias.");
+             message.reply("¿cómo no te pagan por ser tan pelotudo, bro?");
          }
        } catch (error) {
           message.channel.send("Hubo un error. Eres gilipollas. Y este fue el error: ${error}");
